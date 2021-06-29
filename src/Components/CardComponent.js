@@ -1,9 +1,12 @@
 import React from 'react';
+import Community from './Community';
 
 function CardComponent() {
 	return (
 		<React.Fragment>
-			<h1>Card Component</h1>
+			<div className='card__container'>
+				<Community />
+			</div>
 		</React.Fragment>
 	);
 }
