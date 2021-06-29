@@ -3,8 +3,7 @@ import './App.css';
 
 function App() {
 	return (
-		<div className='App'>
-			<h1>Hello from React</h1>
+		<div className='container'>
 			<CardComponent />
 		</div>
 	);

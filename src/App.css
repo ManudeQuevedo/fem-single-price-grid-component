@@ -11,6 +11,7 @@
 	--bright-yellow: hsl(71, 73%, 54%);
 	--light-gray: hsl(204, 43%, 93%);
 	--grayish-blue: hsl(218, 22%, 67%);
+	--white: hsl(0, 100%, 100%);
 }
 
 * {
@@ -21,11 +22,45 @@
 
 body {
 	background-color: var(--light-gray);
+	font-family: 'Karla', sans-serif;
 	font-size: 16px;
 	min-height: 100vh;
 	width: 100%;
 }
 
-.App {
-	text-align: center;
+/* ==================
+     Card Styles
+================== */
+.card__container {
+	margin: 0 auto;
+	max-width: 550px;
+	width: 85%;
+}
+
+/* ==================
+   Community Styles
+================== */
+.community__container {
+	background-color: var(--white);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 1.5em;
+}
+
+.community__title {
+	color: var(--cyan);
+	margin-bottom: 1em;
+}
+
+.community__guarantee {
+	color: var(--bright-yellow);
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+
+.community__text {
+	color: var(--grayish-blue);
+	font-size: 0.975rem;
+	font-weight: 700;
+	line-height: 1.65;
 }
