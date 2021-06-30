@@ -136,4 +136,20 @@ body {
 ================== */
 .why__container {
 	background-color: var(--light-cyan);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.why__title,
+.why__list {
+	color: var(--light-gray);
+}
+
+.why__title {
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+
+.why__list {
+	list-style: none;
 }
