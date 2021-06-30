@@ -8,7 +8,9 @@
 ================== */
 :root {
 	--cyan: hsl(179, 62%, 43%);
+	--light-cyan: hsl(179, 61%, 54%);
 	--bright-yellow: hsl(71, 73%, 54%);
+	--dark-yellow: hsl(71, 79%, 42%);
 	--light-gray: hsl(204, 43%, 93%);
 	--grayish-blue: hsl(218, 22%, 67%);
 	--white: hsl(0, 100%, 100%);
@@ -36,7 +38,8 @@ body {
 }
 
 .community__container,
-.subscription__container {
+.subscription__container,
+.why__container {
 	padding: 1.5em;
 }
 
@@ -93,7 +96,7 @@ body {
 	color: var(--white);
 	font-size: 1.75rem;
 	font-weight: 700;
-	margin-bottom: 1em;
+	margin-bottom: 0.2em;
 }
 
 .subscription__span {
@@ -106,7 +109,8 @@ body {
 	color: var(--light-gray);
 	font-size: 1rem;
 	font-weight: 700;
-	margin-bottom: 1em;
+	letter-spacing: 0.75px;
+	margin-bottom: 1.5em;
 }
 
 .subscription__btn {
@@ -118,4 +122,18 @@ body {
 	font-weight: 700;
 	padding: 1em 2em;
 	width: 100%;
+	transition: background-color 0.5s ease;
+}
+
+.subscription__btn:hover,
+.subscription__btn:focus {
+	background-color: var(--dark-yellow);
+	cursor: pointer;
+}
+
+/* ==================
+		WhyUs Styles
+================== */
+.why__container {
+	background-color: var(--light-cyan);
 }
