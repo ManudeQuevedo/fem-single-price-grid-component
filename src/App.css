@@ -52,9 +52,14 @@ body {
 ================== */
 .card__container {
 	margin: 0 auto;
-	max-width: 550px;
+	max-width: 600px;
 	padding: 4em 0;
 	width: 85%;
+}
+
+.card__group {
+	display: flex;
+	flex-direction: column;
 }
 
 /* ==================
@@ -80,7 +85,7 @@ body {
 .community__text {
 	color: var(--grayish-blue);
 	font-size: 0.975rem;
-	font-weight: 700;
+	font-weight: 400;
 	line-height: 1.65;
 }
 
@@ -112,8 +117,7 @@ body {
 .subscription__text {
 	color: var(--light-gray);
 	font-size: 1rem;
-	font-weight: 700;
-	letter-spacing: 0.75px;
+	font-weight: 400;
 	margin-bottom: 1.5em;
 }
 
@@ -159,5 +163,31 @@ body {
 }
 
 .why__list li {
+	font-size: 0.85rem;
 	margin-bottom: 0.4em;
+}
+
+@media screen and (min-width: 768px) {
+	.card__group {
+		flex-direction: row;
+	}
+
+	.why__container,
+	.subscription__container {
+		width: 50%;
+	}
+
+	.subscription__container {
+		border-bottom-left-radius: 10px;
+	}
+
+	.why__container {
+		border-bottom-left-radius: 0;
+	}
+
+	.community__container,
+	.subscription__container,
+	.why__container {
+		padding: 1.8em;
+	}
 }
